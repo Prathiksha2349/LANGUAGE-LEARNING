@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Learn C Programming - Lessons</title>
+</head>
+<body>
+    <header>
+        <h1>Learn C Programming</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quizzes.html">Quizzes</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Lesson 1: Hello, World!</h2>
+            <p>Let's start with a simple program. Type the following code into the editor:</p>
+            <code>
+                #include &lt;stdio.h&gt;<br>
+                int main() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;printf("Hello, World!\n");<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+                }
+            </code>
+            <button onclick="checkCode(1)">Check Code</button>
+            <p id="result1"></p>
+        </section>
+
+        <section>
+            <h2>Lesson 2: Variables and Input</h2>
+            <p>Now, let's learn how to use variables and take input from the user. Type the following code:</p>
+            <code>
+                #include &lt;stdio.h&gt;<br>
+                int main() {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;int age;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;printf("Enter your age: ");<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;scanf("%d", &age);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;printf("Your age is %d\n", age);<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+                }
+            </code>
+            <button onclick="checkCode(2)">Check Code</button>
+            <p id="result2"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

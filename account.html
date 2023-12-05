@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Learn C Programming - Account</title>
+</head>
+<body>
+    <header>
+        <h1>Learn C Programming</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lessons.html">Lessons</a></li>
+                <li><a href="quizzes.html">Quizzes</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Login</h2>
+            <div id="loginPanel">
+                <label for="usernameInput">Username:</label>
+                <input type="text" id="usernameInput" required>
+                <label for="passwordInput">Password:</label>
+                <input type="password" id="passwordInput" required>
+                <button onclick="login()">Login</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Create Account</h2>
+            <div id="createAccountPanel">
+                <label for="newUsernameInput">New Username:</label>
+                <input type="text" id="newUsernameInput" required>
+                <label for="newPasswordInput">New Password:</label>
+                <input type="password" id="newPasswordInput" required>
+                <button onclick="createAccount()">Create Account</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Forgot Password</h2>
+            <div id="forgotPasswordPanel">
+                <label for="forgotUsernameInput">Username:</label>
+                <input type="text" id="forgotUsernameInput" required>
+                <button onclick="recoverPassword()">Recover Password</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
